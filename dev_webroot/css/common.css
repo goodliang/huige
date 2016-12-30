@@ -1,0 +1,325 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @title --
+ * @authors goodliang
+ * @date 2016-12-22 17:02:39
+ * 
+ */
+
+
+/*公共样式*/
+
+.por {
+    position: relative;
+    font-weight: normal;
+}
+
+.mt-n {
+    margin-top: 0 !important;
+}
+
+.fwn {
+    font-weight: normal !important;
+}
+
+.f14 {
+    font-size: 14px !important;
+}
+
+.f15 {
+    font-size: 15px !important;
+}
+
+.text-justify {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-default {
+    color: #3f464b !important;
+}
+
+.text-info {
+    color: #6f7072 !important;
+}
+
+.text-muted {
+    color: #949699 !important;
+}
+
+.text-blue {
+    color: #09f !important;
+}
+
+
+/*框架修改*/
+
+.ui.vertical.divider {
+    left: 50% !important;
+}
+
+.ui.form .fields .field {
+    clear: both;
+    margin: 0 0 1em;
+}
+
+.ui.form .fields {
+    margin: 0 -.5em 0;
+}
+
+.ui.secondary.pointing.menu .active.item:hover,
+.ui.secondary.pointing.menu .active.item {
+    border-color: #0099ff;
+    color: #0099ff;
+}
+
+.ui.secondary.pointing.menu .item:hover,
+.ui.secondary.pointing.menu .item {
+    color: #949699;
+}
+
+.ui.selection.dropdown {
+    min-height: 2.6428em;
+    padding: 0.75em 2.1em 0.75em 1em;
+}
+
+.input-block {
+    padding-top: 5px;
+}
+
+.input-block .ui.label {
+    padding: 0.4em 1.5em;
+    border-radius: 0;
+}
+
+.ui.icon.input > input:focus ~ i.icon {
+    opacity: 0.5;
+}
+
+.fields-label {
+    font-size: 0.92857143em;
+    margin: 0em 0em 0.28571429rem 0em;
+    position: relative;
+}
+
+.fields-label.required:after {
+    margin: -0.2em 0em 0em 0.2em;
+    content: '*';
+    color: #e85764;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.blue-tab .ui.tabular.menu .active.item,
+.blue-tab .ui.attached.segment {
+    border-radius: 0;
+    border-color: #0099ff !important;
+}
+
+.blue-tab .ui.tabular.menu {
+    border-color: #0099ff !important;
+}
+
+
+/*水波纹*/
+
+.ripple-container {}
+
+.ripple-container .ripple {
+    background-color: rgba(255, 255, 255, 0.4);
+    animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/**/
+
+body {
+    background: #f4f5f8;
+    color: #3f464b;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.headBar.fixed+.pusher {
+    margin-top: 56px;
+}
+
+.head-logo {
+    float: left;
+    position: relative;
+}
+
+.headBar.ui.menu .item {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+.headBar.ui.menu .item.drawer {
+    padding-top: .9em;
+    padding-bottom: .9em;
+}
+
+.headBar.ui.menu .noLine.item:before {
+    display: none;
+}
+
+.headBar.ui.menu .item.logo {
+    padding: 0;
+    width: 240px;
+    text-align: center;
+}
+
+.headBar.ui.menu .item.logo:hover {
+    background: none;
+}
+
+.headBar.ui.menu .item.logo img {
+    height: 29px;
+    margin: 13px auto;
+}
+
+.home-main {
+    margin-top: 56px;
+}
+
+.sub-title {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.sub-title h2 {
+    margin-bottom: 0;
+}
+
+.white-wrap {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 20px rgba(137, 157, 197, 0.1);
+}
+
+.sub-item-title {
+    position: relative;
+    font-size: 14px;
+}
+
+.sub-item-title h3 {
+    margin: 0;
+    display: inline-block;
+    font-weight: normal;
+    color: #3f464b;
+}
+
+.sub-item-title em {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    background: #0099ff;
+    color: #fff;
+    border-radius: 50%;
+    top: -3px;
+    left: -40px;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.sub-item-title .more {
+    margin-right: -45px;
+}
+
+.sub-item-title .msg {
+    color: #949699;
+    padding: 10px 0 15px;
+}
+
+.form .input-link {
+    font-size: 14px;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+}
+
+.form .input-link a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form .input-link .label {
+    margin-right: 1.5em;
+}
+
+.fluidTabs {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.fluidTabs .tabItem {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    border: 1px solid #e5e8ec;
+    padding: .8em;
+    margin-right: 1em;
+    text-align: center;
+    color: #6f7072;
+    position: relative;
+    cursor: pointer;
+}
+
+.fluidTabs .tabItem.noLine {
+    border: 0;
+}
+
+.fluidTabs .tabItem .closeBtn {
+    position: absolute;
+    top: -12px;
+    right: -15px;
+    color: #0099ff;
+}
+
+.fluidTabs .tabItem.active {
+    border-color: #0099ff;
+    background: #0099ff;
+    color: #fff;
+}
+
+.fluidTabs .tabItem:last-child {
+    margin-right: 0
+}
+
+.fluidTabsCon {
+    border: 1px solid #0099ff;
+}

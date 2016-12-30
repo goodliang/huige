@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>创建活动</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="semantic/semantic.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/create_activity.css" rel="stylesheet">
+    <link href="http://at.alicdn.com/t/font_btwx1g7of6gbke29.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ui top fixed menu huge headBar">
+        <a class="item noLine logo waterRipple" href="/"><img src="images/logo.png" class="ui" alt=""></a>
+        <a class="item noLine drawer"><i class="align justify icon blue large"></i></a>
+        <a class="item noLine">发现活动</a>
+        <div class="right menu">
+            <div class="ui dropdown item noLine" tabindex="0"><i class="china flag"></i>简体中文<i class="dropdown icon"></i>
+                <div class="menu transition hidden" tabindex="-1">
+                    <a class="item"><i class="united states flag"></i>English</a>
+                </div>
+            </div>
+            <!-- <a class="item">联系我们</a> -->
+            <a class="item text-blue"><i class="icon iconfont icon-tianjia"></i>免费创建活动</a>
+        </div>
+    </div>
+    <div class="pusher">
+        <div class="ui container">
+            <div class="sub-title text-justify">
+                <h2 class="fwn">创建活动</h2>
+                <span class="text-muted">最后一次保存于5月28日17:00</span>
+            </div>
+            <div class="ui form f15">
+                <div class="create-area white-wrap">
+                    <div class="sub-item-title">
+                        <div class="text-justify">
+                            <div class="tit">
+                                <em>1</em>
+                                <h3>请填写您活动的基本信息</h3>
+                            </div>
+                            <div class="text-muted more">收起<i class="long arrow up icon"></i></div>
+                        </div>
+                        <div class="msg">您可选择一个以往的活动并复制相关信息。<a href="#">复制活动</a></div>
+                    </div>
+                    <div class="required field">
+                        <label>活动名称</label>
+                        <input type="text" name="" placeholder="例如：中国互联网大会，最少5字，最多30个字">
+                    </div>
+                    <div class="fields-label required"><strong>活动时间</strong></div>
+                    <div class="fields required">
+                        <div class="four wide field">
+                            <div class="ui icon input">
+                                <input type="text" placeholder="2017/1/18">
+                                <i class="calendar icon"></i>
+                            </div>
+                        </div>
+                        <div class="four wide field">
+                            <div class="ui icon input">
+                                <input type="text" placeholder="8:00">
+                                <i class="history icon"></i>
+                            </div>
+                        </div>
+                        <div class="four wide field">
+                            <div class="ui icon input">
+                                <input type="text" placeholder="2017/1/18">
+                                <i class="calendar icon"></i>
+                            </div>
+                        </div>
+                        <div class="four wide field">
+                            <div class="ui icon input">
+                                <input type="text" placeholder="17:00">
+                                <i class="history icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="required field">
+                        <label>活动地点</label>
+                        <div class="ui icon input">
+                            <input type="text" placeholder="">
+                            <i class="marker icon"></i>
+                        </div>
+                    </div>
+                    <div class="input-link"><a href="#">往期活动地址</a><a href="#">地址待定</a><a href="#">这是线上活动</a></div>
+                    <div class="fields-label required"><strong>主办方</strong></div>
+                    <div class="fields required">
+                        <div class="thirteen wide field">
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="gender">
+                                <div class="default text">选择主办方</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="male">会唐网</div>
+                                    <div class="item" data-value="female">会鸽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three wide field">
+                            <div class="ui blue button basic fluid waterRipple">
+                                <i class="icon-bigtianjia iconfont icon button"></i>添加主办方
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-link"><a class="ui blue horizontal label basic  fwn">橙子科技<i class="delete icon"></i></a><a class="ui blue horizontal label basic  fwn">橙子科技<i class="delete icon"></i></a><a class="ui blue horizontal label basic  fwn">香蕉科技<i class="delete icon"></i></a></div>
+                    <div class="fields-label"><strong>同步到群组</strong></div>
+                    <div class="fields required">
+                        <div class="thirteen wide field">
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="gender">
+                                <div class="default text">默认群组</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="male">会唐网</div>
+                                    <div class="item" data-value="female">会鸽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three wide field">
+                            <div class="ui blue button basic fluid waterRipple">
+                                <i class="icon-bigtianjia iconfont icon button"></i>创建新群组
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fields-label"><strong>活动类别</strong></div>
+                    <div class="input-link" style="padding:1em 0;"><a class="ui tag label teal">IT/互联网</a><a class="ui tag label teal">医药／生物</a><a class="ui tag label">讲座／沙龙</a><a class="ui tag label">艺术／音乐</a></div>
+                    <div class="fields-label"><strong>宣传图</strong></div>
+                    <p class="text-muted f14">我们建议您上传一张小于5M，并且尺寸在1920×960像素（2：1）的图片。</p>
+                    <div class="fields-label"><strong>隐私设置</strong></div>
+                    <div class="ui toggle checkbox" style="padding:1em 0">
+                        <input type="checkbox" name="public" checked="checked">
+                        <label>已开启，活动对外开放</label>
+                    </div>
+                    <div class="field">
+                        <label>站点语言</label>
+                        <div class="ui search selection dropdown">
+                            <input type="hidden" name="country">
+                            <i class="dropdown icon"></i>
+                            <input class="search" tabindex="0">
+                            <div class="default text">选择国家</div>
+                            <div class="menu" tabindex="-1">
+                                <div data-value="ad" class="item"><i class="china flag"></i>简体中文</div>
+                                <div data-value="ae" class="item"><i class="united states flag"></i>English</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui divider hidden"></div>
+                <div class="create-area white-wrap">
+                    <div class="sub-item-title">
+                        <div class="text-justify">
+                            <div class="tit">
+                                <em>2</em>
+                                <h3>请填写您会议的介绍信息</h3>
+                            </div>
+                            <div class="text-muted more">收起<i class="long arrow up icon"></i></div>
+                        </div>
+                        <div class="msg">欢迎使用微信一键导入功能。<a class="ui label teal mini waterRipple"><i class="wechat icon"></i>微信一键导入</a></div>
+                    </div>
+                    <div class="ui divider hidden"></div>
+                    <div class="fluidTabs">
+                        <div class="tabItem active">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn"></i></div>
+                        <div class="tabItem">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn"></i></div>
+                        <div class="tabItem">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn"></i></div>
+                        <div class="tabItem">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn"></i></div>
+                        <div class="tabItem">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn"></i></div>
+                        <div class="tabItem text-blue noLine"><i class="icon-bigtianjia iconfont icon button"></i>添加菜单</div>
+                    </div>
+                    <div class="fluidTabsCon" style="min-height: 400px;">
+                    </div>
+                </div>
+                <div class="ui divider hidden"></div>
+                <div class="create-area white-wrap">
+                    <div class="sub-item-title">
+                        <div class="text-justify">
+                            <div class="tit">
+                                <em>3</em>
+                                <h3>请设置活动门票的价格</h3>
+                            </div>
+                            <div class="text-muted more">收起<i class="long arrow up icon"></i></div>
+                        </div>
+                    </div>
+                    <div class="ui divider hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/rippled.js"></script>
+    <script type="text/javascript" src="semantic/semantic.min.js"></script>
+    <script type="text/javascript">
+    $('.dropdown').dropdown()
+    $('.ui.checkbox').checkbox()
+    $('.menu .item').tab()
+    </script>
+</body>
+
+</html>
