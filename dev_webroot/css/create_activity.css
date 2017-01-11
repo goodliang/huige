@@ -11,3 +11,161 @@
 .create-area {
     padding: 35px 70px;
 }
+
+.create-border {
+    border: 4px solid #f5f7fb;
+}
+
+.ui.money.dropdown {
+    min-width: 0px;
+    border: 0;
+    background: none;
+    padding: 0;
+}
+
+.create-border .ui.table {
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+}
+
+.create-border .ui.table thead th {
+    color: #6f7072;
+    border: 0;
+    font-weight: normal;
+    background: #f5f7fb;
+}
+
+.more-setting {
+    text-align: center;
+    color: #0099ff;
+    padding-top: .2em;
+}
+
+.sub-item-title.little-title {
+    padding: 1em;
+    background: #f5f7fb;
+}
+
+.sub-item-title.little-title .more {
+    margin-right: 0
+}
+
+.column.ui.grid.item-input > .column:not(.row) {
+    padding: .5rem;
+}
+
+.item-input .ui.checkbox {
+    padding: .7rem .5rem;
+    display: block;
+    border: 1px dashed #dde0ec;
+}
+
+.item-input .ui.checkbox:hover {
+    border-color: #09f;
+    color: #09f;
+}
+
+.item-input .ui.checkbox:hover label {
+    color: #09f;
+}
+
+.item-input .ui.checkbox label {
+    padding-left: 0;
+    padding-right: 1.85714em:
+}
+
+.item-input .ui.checkbox label:before,
+.item-input .ui.checkbox label:after {
+    left: inherit;
+    right: 0;
+}
+
+.item-input .ui.checkbox input:checked ~ label:before {
+    border-color: #09f;
+}
+
+.item-input .ui.checkbox input:checked ~ label:after,
+.item-input .ui.checkbox input:checked ~ label {
+    color: #09f;
+}
+
+.custom-item {
+    margin: 0 .5em;
+}
+
+.custom-item>.item {
+    margin: .7em 0;
+    padding: .5rem;
+    border: 1px dashed #dde0ec;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-item>.item:hover,
+.custom-item>.item.active {
+    border-color: #09f;
+    color: #09f;
+}
+
+.custom-form {
+    margin: 0em 0em 0.28571429rem 0em;
+}
+
+.custom-form>label {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: bold;
+    text-transform: none;
+    font-size: 0.92857143em;
+}
+
+.field,
+.fields {
+    white-space: nowrap;
+}
+
+.field>.move,
+.fields>.move {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+.msg-list {
+    border-top: 2px solid #fff;
+    padding: 1em;
+    min-height: 5em;
+    background: #f5f7fb
+}
+
+.orange-panel {
+    border: 1px solid #fcb34c;
+}
+
+.orange-panel .top {
+    background: #fff6ea;
+    color: #fcb34c
+}
+
+.orange-panel .bottom {
+    background: #fcb34c;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .create-area {
+        padding: 15px;
+    }
+    .sub-item-title em {
+        position: inherit;
+    }
+    .sub-item-title .more {
+        margin-right: 0
+    }
+}

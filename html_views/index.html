@@ -10,13 +10,14 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="semantic/semantic.min.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
-    <link href="http://at.alicdn.com/t/font_sjswibhgorrrizfr.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="http://at.alicdn.com/t/font_nk7l1tzdcjotuik9.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="pushable">
     <div class="ui top fixed menu huge headBar">
         <a class="item noLine logo waterRipple" href="/"><img src="images/logo.png" class="ui" alt=""></a>
-        <a class="item noLine drawer"><i class="align justify icon blue large"></i></a>
+        <a class="item noLine drawer" id="folding-menu"><i class="align justify icon blue large"></i></a>
         <a class="item noLine">发现活动</a>
         <div class="right menu">
             <div class="ui dropdown item noLine" tabindex="0"><i class="china flag"></i>简体中文<i class="dropdown icon"></i>
@@ -25,20 +26,563 @@
                 </div>
             </div>
             <a class="item">联系我们</a>
-            <a class="item text-blue"><i class="icon iconfont icon-tianjia"></i>免费创建活动</a>
+            <a class="item text-blue" href="create_activity.html"><i class="icon iconfont icon-tianjia"></i>免费创建活动</a>
+        </div>
+    </div>
+    <div class="ui sidebar leftSidebar">
+        <div class="sidebar-head">
+            <div class="avatar-box defautl">
+                <img src="images/pp02.png" class="avatar">
+                <div class="info">
+                    Hello,
+                    <br>欢迎来到会鸽！
+                </div>
+            </div>
+            <div class="ui grid vertically padded">
+                <div class="column">
+                    <a href="###" class="ui button blue tiny">登陆</a>
+                    <a href="###" class="ui button basic blue tiny">免费注册</a></div>
+            </div>
+        </div>
+        <div class="sidebar-head">
+            <div class="avatar-box">
+                <img src="images/pp01.png" class="avatar">
+                <div class="info">
+                    <div class="name"><strong>李小辉</strong>
+                        <div class="ui teal horizontal label hand-type"><i class="icon-huangguan icon iconfont"></i> 专业版</div>
+                    </div>
+                    <div class="text-mued f12">EventDove产品经理</div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <a class="item active"><i class="calendar icon"> </i>活动管理</a>
+            <a class="item"><i class="bar chart icon"></i>数据统计</a>
+            <a class="item"><i class="users icon"></i>我的群组</a>
+            <a class="item"><i class="setting icon"></i>账号管理</a>
         </div>
     </div>
     <div class="pusher home-main">
-        <div class="ui grid center centered">
+        <div class="ui grid center centered padded">
             <img src="images/banner.jpg" alt="">
+        </div>
+        <div class="ui container">
+            <div class="ui grid">
+                <div class="column">
+                    <div class="searchBar">
+                        <h2 class="myActivity textShadow">属于你的活动中心</h2>
+                        <div class="ui large form search-form">
+                            <div class="fields">
+                                <div class="thirteen wide field">
+                                    <input type="text" placeholder="寻找热门活动">
+                                </div>
+                                <div class="three wide field">
+                                    <div class="ui animated fade button blue large fluid boxShadow">
+                                        <div class="visible content">搜索</div>
+                                        <div class="hidden content">
+                                            搜索<i class="chevron circle right icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fields"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-title text-justify">
+                <h2 class="text-info fwn">热门活动</h2>
+                <a href="#">更多</a>
+            </div>
+            <div class="ui three doubling stackable cards default link hot-activity">
+                <div class="card hot-card">
+                    <div class="image" style="background-image: url(images/banner01.jpg)">
+                    </div>
+                    <div class="ui red label hot-tag">互联网</div>
+                    <div class="content">
+                        <div class="card-box">
+                            <div class="card-img"><img src="images/pic.jpg"></div>
+                            <div class="card-text f16">中国网红产业峰会暨中国500强网红颁奖盛典</div>
+                        </div>
+                        <div class="info-box">
+                            <p class="text-justify text-muted date"><span><i class="wait icon"></i>2016年10月01日</span>
+                                <span class="hot-share hand-type transition hidden"><i class="fitted share icon mr-n"></i> 分享</span>
+                            </p>
+                            <div class="text-muted">
+                                <div class="text-hide"><i class="marker icon"></i>北京市朝阳区国际会议中心天辰东路7号</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-card">
+                    <div class="image" style="background-image: url(images/banner02.jpg)">
+                    </div>
+                    <div class="ui teal label hot-tag">互联网</div>
+                    <div class="content">
+                        <div class="card-box">
+                            <div class="card-img"><img src="images/pic.jpg"></div>
+                            <div class="card-text f16">中国网红产业峰会暨中国500强网红颁奖盛典</div>
+                        </div>
+                        <div class="info-box">
+                            <p class="text-justify text-muted date"><span><i class="wait icon"></i>2016年10月01日</span>
+                                <span class="hot-share hand-type transition hidden"><i class="fitted share icon mr-n"></i> 分享</span>
+                            </p>
+                            <div class="text-muted">
+                                <div class="text-hide"><i class="marker icon"></i>北京市朝阳区国际会议中心天辰东路7号</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-card">
+                    <div class="image" style="background-image: url(images/banner03.jpg)">
+                    </div>
+                    <div class="ui orange label hot-tag">互联网</div>
+                    <div class="content">
+                        <div class="card-box">
+                            <div class="card-img"><img src="images/pic.jpg"></div>
+                            <div class="card-text f16">中国网红产业峰会暨中国500强网红颁奖盛典</div>
+                        </div>
+                        <div class="info-box">
+                            <p class="text-justify text-muted date"><span><i class="wait icon"></i>2016年10月01日</span>
+                                <span class="hot-share hand-type transition hidden"><i class="fitted share icon mr-n"></i> 分享</span>
+                            </p>
+                            <div class="text-muted">
+                                <div class="text-hide"><i class="marker icon"></i>北京市朝阳区国际会议中心天辰东路7号</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-card">
+                    <div class="image" style="background-image: url(images/banner02.jpg)">
+                    </div>
+                    <div class="ui yellow label hot-tag">互联网</div>
+                    <div class="content">
+                        <div class="card-box">
+                            <div class="card-img"><img src="images/pic.jpg"></div>
+                            <div class="card-text f16">中国网红产业峰会暨中国500强网红颁奖盛典</div>
+                        </div>
+                        <div class="info-box">
+                            <p class="text-justify text-muted date"><span><i class="wait icon"></i>2016年10月01日</span>
+                                <span class="hot-share hand-type transition hidden"><i class="fitted share icon mr-n"></i> 分享</span>
+                            </p>
+                            <div class="text-muted">
+                                <div class="text-hide"><i class="marker icon"></i>北京市朝阳区国际会议中心天辰东路7号</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-card">
+                    <div class="image" style="background-image: url(images/banner01.jpg)">
+                    </div>
+                    <div class="ui olive label hot-tag">互联网</div>
+                    <div class="content">
+                        <div class="card-box">
+                            <div class="card-img"><img src="images/pic.jpg"></div>
+                            <div class="card-text f16">中国网红产业峰会暨中国500强网红颁奖盛典</div>
+                        </div>
+                        <div class="info-box">
+                            <p class="text-justify text-muted date"><span><i class="wait icon"></i>2016年10月01日</span>
+                                <span class="hot-share hand-type transition hidden"><i class="fitted share icon mr-n"></i> 分享</span>
+                            </p>
+                            <div class="text-muted">
+                                <div class="text-hide"><i class="marker icon"></i>北京市朝阳区国际会议中心天辰东路7号</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-card">
+                    <div class="image" style="background-image: url(images/banner03.jpg)">
+                    </div>
+                    <div class="ui green label hot-tag">互联网</div>
+                    <div class="content">
+                        <div class="card-box">
+                            <div class="card-img"><img src="images/pic.jpg"></div>
+                            <div class="card-text f16">中国网红产业峰会暨中国500强网红颁奖盛典</div>
+                        </div>
+                        <div class="info-box">
+                            <p class="text-justify text-muted date"><span><i class="wait icon"></i>2016年10月01日</span>
+                                <span class="hot-share hand-type transition hidden"><i class="fitted share icon mr-n"></i> 分享</span>
+                            </p>
+                            <div class="text-muted">
+                                <div class="text-hide"><i class="marker icon"></i>北京市朝阳区国际会议中心天辰东路7号</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-title text-justify">
+                <h2 class="text-info fwn">热门地区</h2>
+            </div>
+            <div class="ui five cards default link">
+                <div class="card hot-area">
+                    <div class="image">
+                        <img src="images/bj.png">
+                    </div>
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="active side">
+                                <h2>北京</h2></div>
+                            <div class="side">
+                                <h2>Beijing</h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-area">
+                    <div class="image">
+                        <img src="images/sh.png">
+                    </div>
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="active side">
+                                <h2>上海</h2></div>
+                            <div class="side">
+                                <h2>Shanghai</h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-area">
+                    <div class="image">
+                        <img src="images/gz.png">
+                    </div>
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="active side">
+                                <h2>广州</h2></div>
+                            <div class="side">
+                                <h2>Guangzhou</h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-area">
+                    <div class="image">
+                        <img src="images/sz.png">
+                    </div>
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="active side">
+                                <h2>深圳</h2></div>
+                            <div class="side">
+                                <h2>Shenzhen</h2></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card hot-area">
+                    <div class="image">
+                        <img src="images/nj.png">
+                    </div>
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="active side">
+                                <h2>南京</h2></div>
+                            <div class="side">
+                                <h2>Nanjing</h2></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-title text-justify">
+                <h2 class="text-info fwn">热门群组</h2>
+            </div>
+            <div class="ui three doubling stackable cards default link">
+                <div class="card">
+                    <div class="content">
+                        <div class="ui divided items">
+                            <div class="item">
+                                <div class="ui tiny image">
+                                    <img src="/images/pp01.png">
+                                </div>
+                                <div class="content">
+                                    <a class="header fwn">MadNet创业社区<i class="icon-vip1 icon iconfont blue"></i></a>
+                                    <div class="meta">
+                                        <span class="cinema">活动：56&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <span class="cinema">会员：163</span>
+                                    </div>
+                                    <div class="description">
+                                        <p></p>
+                                    </div>
+                                    <div>
+                                        <a class="ui label mini blue">我要成为会员</a>
+                                        <a class="ui label mini blue basic">分享</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui divider"></div>
+                        <p class="text-muted">
+                            MadNet不同于传统创业孵化与加速器是一个以社会企业法理运作的创业社区专注于云计算、大数据和智能终端整合相关的创新...
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="ui divided items">
+                            <div class="item">
+                                <div class="ui tiny image">
+                                    <img src="/images/pp02.png">
+                                </div>
+                                <div class="content">
+                                    <a class="header fwn">MadNet创业社区<i class="icon-vip1 icon iconfont blue"></i></a>
+                                    <div class="meta">
+                                        <span class="cinema">活动：56&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <span class="cinema">会员：163</span>
+                                    </div>
+                                    <div class="description">
+                                        <p></p>
+                                    </div>
+                                    <div>
+                                        <a class="ui label mini blue">我要成为会员</a>
+                                        <a class="ui label mini blue basic">分享</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui divider"></div>
+                        <p class="text-muted">
+                            MadNet不同于传统创业孵化与加速器是一个以社会企业法理运作的创业社区专注于云计算、大数据和智能终端整合相关的创新...
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="ui divided items">
+                            <div class="item">
+                                <div class="ui tiny image">
+                                    <img src="/images/pp03.png">
+                                </div>
+                                <div class="content">
+                                    <a class="header fwn">MadNet创业社区<i class="icon-vip1 icon iconfont blue"></i></a>
+                                    <div class="meta">
+                                        <span class="cinema">活动：56&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        <span class="cinema">会员：163</span>
+                                    </div>
+                                    <div class="description">
+                                        <p></p>
+                                    </div>
+                                    <div>
+                                        <a class="ui label mini blue">我要成为会员</a>
+                                        <a class="ui label mini blue basic">分享</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui divider"></div>
+                        <p class="text-muted">
+                            MadNet不同于传统创业孵化与加速器是一个以社会企业法理运作的创业社区专注于云计算、大数据和智能终端整合相关的创新...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-title text-justify">
+                <h2 class="text-info fwn">按分类查看</h2>
+            </div>
+            <div class="ui five cards default">
+                <div class="card home-sorts">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <h3 class="ui icon header inverted">
+                                    <i class="icon-shangwuzhongxin icon iconfont f26"></i>
+                                    <div class="content fwn"><strong class="tit">商务</strong><div class="sub header fwn">主要有酒会.年会.商业会务.论坛.晚会.演出等</div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/type01.png">
+                        <h3 class="ui icon header inverted default-header">
+                            <i class="icon-shangwuzhongxin icon iconfont f26"></i>
+                            <div class="content fwn"><strong class="tit">商务</strong>
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card home-sorts">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <h3 class="ui icon header inverted">
+                                    <i class="icon-lvyou icon iconfont f26"></i>
+                                    <div class="content fwn"><strong class="tit">旅游</strong><div class="sub header fwn">主要有酒会.年会.商业会务.论坛.晚会.演出等</div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/type02.png">
+                        <h3 class="ui icon header inverted default-header">
+                                    <i class="icon-lvyou icon iconfont f26"></i>
+                                    <div class="content fwn"><strong class="tit">旅游</strong>
+                                    </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card home-sorts">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <h3 class="ui icon header inverted">
+                                    <i class="icon-iconfontxuexiao icon iconfont f26"></i>
+                                    <div class="content fwn"><strong class="tit">教育</strong><div class="sub header fwn">主要有酒会.年会.商业会务.论坛.晚会.演出等</div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/type03.png">
+                        <h3 class="ui icon header inverted default-header">
+                                    <i class="icon-iconfontxuexiao icon iconfont f26"></i>
+                                    <div class="content fwn"><strong class="tit">教育</strong>
+                                    </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card home-sorts">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <h3 class="ui icon header inverted">
+                                    <i class="icon-icon0208 icon iconfont f26"></i>
+                                    <div class="content fwn"><strong class="tit">互联网</strong><div class="sub header fwn">主要有酒会.年会.商业会务.论坛.晚会.演出等</div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/type04.png">
+                        <h3 class="ui icon header inverted default-header">
+                                    <i class="icon-icon0208 icon iconfont f26"></i>
+                                    <div class="content fwn"><strong class="tit">互联网</strong>
+                                    </div>
+                        </h3>
+                    </div>
+                </div>
+                <div class="card home-sorts">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <h3 class="ui icon header inverted">
+                                    <i class="icon-yiliaomedical14 icon iconfont f26"></i>
+                                    <div class="content"><strong class="tit">医疗</strong><div class="sub header fwn">主要有酒会.年会.商业会务.论坛.晚会.演出等</div>
+                                    </div>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="images/type05.png">
+                        <h3 class="ui icon header inverted default-header">
+                                    <i class="icon-yiliaomedical14 icon iconfont f26"></i>
+                                    <div class="content"><strong class="tit">医疗</strong>
+                                    </div>
+                         </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="create-activity-bar" style="background-image: url(images/banner.png)">
+            <h3 class="f26">现在开始创建您的活动，多种模版选择，支持多平台浏览。</h3>
+            <div class="ui animated fade button blue  massive">
+                <div class="visible content">创建活动</div>
+                <div class="hidden content">
+                    创建活动<i class="chevron circle right icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="ui container footerBar">
+            <div class="ui doubling stackable grid">
+                <div class="three wide column ">
+                    <div class="ui vertical menu">
+                        <div class="item">
+                            <h4>快速操作</h4>
+                            <div class="menu">
+                                <a class="item">创建活动</a>
+                                <a class="item">发现活动</a>
+                                <a class="item">发布场地询单</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column ">
+                    <div class="ui vertical menu">
+                        <div class="item">
+                            <h4>了解我们</h4>
+                            <div class="menu">
+                                <a class="item">关于会鸽</a>
+                                <a class="item">隐私声明</a>
+                                <a class="item">常见问题</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column ">
+                    <div class="ui vertical menu">
+                        <div class="item">
+                            <h4>更多</h4>
+                            <div class="menu">
+                                <a class="item">下载APP</a>
+                                <a class="item">会唐网</a>
+                                <a class="item">会鸽开放平台</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide column ">
+                    <div class="ui vertical menu">
+                        <div class="item">
+                            <h4>联系我们</h4>
+                            <div class="menu">
+                                <div class="item"><i class="marker icon"></i>北京市朝阳区泰禾文化大厦4F</div>
+                                <div class="item"><i class="mail icon"></i>support@eventdove.com</div>
+                                <div class="item"><i class="call icon"></i>025-87775086</div>
+                                <div class="item"><i class="qq icon"></i>2850610937</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column ">
+                    <img src="images/event_dove_code.jpg" class="ui centered image small">
+                    <p class="text-muted text-center">服务号：Evendove_T</p>
+                </div>
+            </div>
+            <div class="ui divider"></div>
+            <div class="ui grid vertically padded">
+                <div class="right floated twelve wide column f12 text-muted">Copyright©2017 EventDove.com版权所有 | 苏ICP备 10211262号 苏ICP证 B1-20150298号</div>
+                <div class="left floated right aligned four wide column"><a href="###"><i class="weibo icon"></i></a><a href="###"><i class="tencent weibo icon"></i></a></div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/rippled.js"></script>
     <script type="text/javascript" src="semantic/semantic.min.js"></script>
     <script type="text/javascript">
-    $('.dropdown')
-        .dropdown();
+    $('.dropdown').dropdown();
+    $('.hot-activity .hot-card')
+        .transition({
+            animation: 'pulse',
+            duration: 800,
+            interval: 200
+        });
+    $('.hot-card').hover(function() {
+        $(this).find('.hot-share').transition('drop');
+    })
+    $('.hot-area').hover(function() {
+        $(this).find('.shape').shape('flip down');
+    })
+    $('.home-sorts').dimmer({
+        on: 'hover',
+        opacity: '0.3',
+        transition: 'fade up'
+    });
+    $('.ui.sidebar.leftSidebar').sidebar({
+        context: $('.pushable'),
+        dimPage: false,
+        closable: false,
+        transition: 'push'
+    }).sidebar('attach events', '#folding-menu').sidebar('toggle')
     </script>
 </body>
 
