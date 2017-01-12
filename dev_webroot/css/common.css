@@ -267,7 +267,7 @@ body {
 }
 
 .headBar.fixed+.pusher {
-    margin-top: 56px;
+    padding-top: 56px;
 }
 
 .head-logo {
