@@ -398,6 +398,7 @@ body {
     color: #6f7072;
     position: relative;
     cursor: pointer;
+    background: #fff;
 }
 
 .fluidTabs .tabItem.noLine {
@@ -427,9 +428,9 @@ body {
 
 
 /*.toggle-area {
-    display: none;
-}
-*/
+    display: none !important; 
+}*/
+
 
 .footerBar {
     margin-top: 5em;

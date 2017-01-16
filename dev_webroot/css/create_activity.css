@@ -158,6 +158,10 @@
     color: #fff;
 }
 
+.fluidTabsCon {
+    background: #fff;
+}
+
 @media screen and (max-width: 768px) {
     .create-area {
         padding: 15px;
@@ -170,7 +174,9 @@
     }
 }
 
+
 /*分类*/
+
 .home-sorts .shape,
 .home-sorts .sides {
     width: 100%;
@@ -212,10 +218,15 @@
     transition: opacity .5s ease;
 }
 
-.home-sorts:hover .default-header {
+.home-sorts.dimmed .default-header {
     opacity: 0;
 }
 
-/*.ui.steps .step.active {
-    background: #e3e8f5;
-}*/
+.activity-steps .button {
+    position: absolute;
+    right: 15px;
+}
+
+.activity-steps .ui.steps .active.step:after {
+    display: none !important;
+}

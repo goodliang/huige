@@ -34,19 +34,19 @@
             <div class="bar"></div>
             <!--  <div class="label">74%</div> -->
         </div>
-        <div class="ui container">
+        <div class="ui text container ">
             <div class="ui hidden divider"></div>
             <div class="sub-item-title">
                 <h2 class="ui header">
                   <i class="file text outline icon"></i>
                   <div class="content">
-                    请填写您活动的基本信息
-                    <div class="sub header">您打算发布什么类型的活动？</div>
+                    您打算发布什么类型的活动？
+                    <div class="sub header">一、从基本信息开始</div>
                   </div>
                 </h2>
             </div>
             <div class="ui hidden divider"></div>
-            <div class="ui four cards default">
+            <div class="ui four cards default link">
                 <div class="card home-sorts">
                     <div class="ui dimmer">
                         <div class="content">
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 <div class="card home-sorts">
-                    <div class="ui dimmer">
+                    <div class="ui dimmer active">
                         <div class="content">
                             <div class="center">
                                 <h3 class="ui icon header inverted">
@@ -222,6 +222,416 @@
                 <button type="button" class="ui button blue big">下一步</button>
             </div>
         </div>
+        <div class="ui text container ">
+            <div class="ui hidden divider"></div>
+            <div class="sub-item-title">
+                <h2 class="ui header">
+                  <i class="file text outline icon"></i>
+                  <div class="content">
+                    给您的活动取一个响亮的标题？
+                    <div class="sub header">一、从基本信息开始</div>
+                  </div>
+                </h2>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui form huge">
+                <div class="required field">
+                    <label>活动名称</label>
+                    <input type="text" name="" placeholder="例如：中国互联网大会，最少5字，最多30个字">
+                </div>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="text-justify">
+                <button class="ui  button big"><i class="angle left icon"></i>返回</button>
+                <button type="button" class="ui button blue big">下一步</button>
+            </div>
+        </div>
+        <div class="ui text container ">
+            <div class="ui hidden divider"></div>
+            <div class="sub-item-title">
+                <h2 class="ui header">
+                  <i class="file text outline icon"></i>
+                  <div class="content">
+                    设置时间以及要举办的地点
+                    <div class="sub header">一、从基本信息开始</div>
+                  </div>
+                </h2>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui form huge">
+                <div class="required field">
+                    <label>活动时间</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <div class="ui icon input">
+                                <input type="text" placeholder="开始时间">
+                                <i class="calendar icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui icon input">
+                                <input type="text" placeholder="结束时间">
+                                <i class="calendar icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="required field">
+                    <label>活动地点</label>
+                    <div class="ui icon input">
+                        <input type="text" placeholder="">
+                        <i class="marker icon"></i>
+                    </div>
+                </div>
+                <div class="input-link"><a href="#">往期活动地址</a><a href="#">地址待定</a><a href="#">这是线上活动</a></div>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="text-justify">
+                <button class="ui  button big"><i class="angle left icon"></i>返回</button>
+                <button type="button" class="ui button blue big">下一步</button>
+            </div>
+        </div>
+        <div class="ui text container ">
+            <div class="ui hidden divider"></div>
+            <div class="sub-item-title">
+                <h2 class="ui header">
+                  <i class="file text outline icon"></i>
+                  <div class="content">
+                    主办这次活动的是谁？
+                    <div class="sub header">一、从基本信息开始</div>
+                  </div>
+                </h2>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui top attached segment huge">
+                <div class="text-justify">
+                    <span>橙子科技</span>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit">
+                            <label></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment huge">
+                <div class="text-justify">
+                    <span>腾讯科技</span>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" checked="">
+                            <label></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui attached segment huge">
+                <div class="text-justify">
+                    <span>阿里巴巴科技</span>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit">
+                            <label></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui bottom attached button huge" id="add-sponsor"><i class="icon-bigtianjia iconfont icon button"></i>添加主办方</div>
+            <div class="ui hidden divider"></div>
+            <div class="text-justify">
+                <button class="ui  button big"><i class="angle left icon"></i>返回</button>
+                <button type="button" class="ui button blue big">下一步</button>
+            </div>
+        </div>
+        <div class="ui text container ">
+            <div class="ui hidden divider"></div>
+            <div class="sub-item-title">
+                <h2 class="ui header">
+                  <i class="file text outline icon"></i>
+                  <div class="content">
+                    发布属于您的活动
+                  </div>
+                </h2>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="ui one column grid activity-steps">
+                <div class="column">
+                    <div class="ui big fluid vertical steps">
+                        <div class="completed step">
+                            <i class="truck icon"></i>
+                            <div class="content">
+                                <div class="title">一、从基本信息开始</div>
+                                <div class="description">活动类型、名称、时间和地点以及主办方信息</div>
+                            </div>
+                            <button type="button" class="ui teal button">编辑</button>
+                        </div>
+                        <div class="active step">
+                            <i class="edit icon"></i>
+                            <div class="content">
+                                <div class="title">二、活动描述信息</div>
+                                <div class="description">活动信息、演讲嘉宾和活动日程等等</div>
+                            </div>
+                            <button type="button" class="ui blue button">继续</button>
+                        </div>
+                        <div class="active step">
+                            <i class="tags icon"></i>
+                            <div class="content">
+                                <div class="title">三、门票设置</div>
+                                <div class="description">门票价格、币种等等</div>
+                            </div>
+                            <button type="button" class="ui blue button">继续</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui hidden divider"></div>
+            <div class="text-center">
+                <button type="button" class="ui button blue big">发布活动</button>
+            </div>
+        </div>
+        <div class="ui text container ">
+            <div class="ui hidden divider"></div>
+            <div class="sub-item-title">
+                <h2 class="ui header">
+                  <i class="file text outline icon"></i>
+                  <div class="content">
+                    您会议的介绍信息
+                    <div class="sub header">二、活动描述信息</div>
+                  </div>
+                </h2>
+            </div>
+            <div class="ui hidden divider"></div>
+
+            <div class="fluidTabs">
+                <div class="tabItem active">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn large"></i></div>
+                <div class="tabItem">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn large"></i></div>
+                <div class="tabItem">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn large"></i></div>
+                <div class="tabItem">活动详情<i class="icon-iconfontguanbi icon iconfont closeBtn large"></i></div>
+                <div class="tabItem text-blue noLine"><i class="icon-bigtianjia iconfont icon button"></i>添加菜单</div>
+            </div>
+            <div class="fluidTabsCon" style="min-height: 400px;">
+            </div>
+
+            <div class="ui hidden divider"></div>
+            <div class="text-justify">
+                <button class="ui  button big"><i class="angle left icon"></i>返回</button>
+                <button type="button" class="ui button blue big">完成</button>
+            </div>
+        </div>
+        <!-- 主办方弹层 -->
+        <div class="ui sponsor mini modal">
+            <!-- <i class="close icon"></i> -->
+            <div class="header">
+                添加主办方
+            </div>
+            <div class="content">
+                <div class="ui form">
+                    <div class="required field">
+                        <label>主办方名称</label>
+                        <input type="text" name="" placeholder="请输入名称">
+                    </div>
+                    <div class="field">
+                        <label>组织者logo</label>
+                        <div class="ui grid">
+                            <div class="three wide column"><img src="http://img.eventown.cn/upimg/2016/12/14/1p6li0xhdccpqagv.jpg!nw200h200" alt="" width="100%"></div>
+                            <div class="thirteen wide column">
+                                <button type="button" class="ui button blue mini">上传图片</button>
+                                <div class="text-muted f13" style="padding-top:.5em;">扩展名为jpg、jpeg、gif、png或bmp的图片</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="required field">
+                        <label>联系方式</label>
+                        <input type="tel" placeholder="手机号/邮箱">
+                    </div>
+                    <div class="text-info"><i class="wechat icon teal "></i>上传微信公众号二维码&nbsp;&nbsp;&nbsp;&nbsp;<span class="ui transparent input"><input type="file" name="" id=""></span></div>
+                </div>
+            </div>
+            <div class="actions text-center">
+                <div class="ui blue button ok">
+                    确定
+                </div>
+            </div>
+        </div>
+        <!-- 微信弹层 -->
+        <div class="ui weixin mini modal">
+            <!-- <i class="close icon"></i> -->
+            <div class="header">
+                微信一键导入
+            </div>
+            <div class="content">
+                <div class="ui form">
+                    <h3 class="ui icon header center aligned">
+                      <i class="wechat teal icon circular inverted"></i>
+                      <div class="content">
+                        导入微信文章
+                        <div class="sub header">将你在微信图文页的排版一键导入至会鸽</div>
+                      </div>
+                    </h3>
+                    <div class="ui hidden divider"></div>
+                    <div class="field">
+                        <label>请输入微信图文页面的地址</label>
+                        <input type="text" name="" placeholder="请输入微信文章链接地址">
+                    </div>
+                </div>
+            </div>
+            <div class="actions text-center">
+                <div class="ui button deny">
+                    取消
+                </div>
+                <div class="ui blue button ok">
+                    确定
+                </div>
+            </div>
+        </div>
+        <!-- 门票弹层 -->
+        <div class="ui admission-ticket small modal">
+            <!-- <i class="close icon"></i> -->
+            <div class="header">
+                门票设置
+            </div>
+            <div class="content">
+                <div class="ui form f15">
+                    <div class="inline fields">
+                        <label>门票价格</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="mp" checked="checked">
+                                <label>费用包含在价格中</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="mp">
+                                <label>费用不包含在价格中</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui padded grid orange-panel">
+                        <div class="three column row top">
+                            <div class="column">
+                                售票价格：¥22
+                            </div>
+                            <div class="column">
+                                服务费：¥0.55
+                            </div>
+                            <div class="column">
+                                您所得：¥21.45
+                            </div>
+                        </div>
+                        <div class="row bottom">
+                            <div class="column">
+                                注：服务费不包含第三方支付（如支付宝、微信、PayPal）手续费用
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field" style="margin-top:1em">
+                        <label>门票说明</label>
+                        <textarea rows="3" placeholder="请输入门票简介或说明事项"></textarea>
+                    </div>
+                    <div class="fields-label"><strong>售票时间&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="example" tabindex="0" class="hidden" checked="">
+                            <label class="f12">（默认到活动结束,也可以自定义售票时间和价格）</label>
+                        </div>
+                    </div>
+                    <div class="create-border">
+                        <table class="ui padded table tablet stackable f15">
+                            <thead>
+                                <tr>
+                                    <th class="ten wide">时间</th>
+                                    <th class="three wide">
+                                        价格 / ¥
+                                    </th>
+                                    <th class="three wide"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ten wide">
+                                        <div class="two fields">
+                                            <div class="field">
+                                                <div class="ui icon input">
+                                                    <input type="text" placeholder="开始时间">
+                                                    <i class="calendar icon"></i>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <div class="ui icon input">
+                                                    <input type="text" placeholder="结束时间">
+                                                    <i class="calendar icon"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="three wide">
+                                        <div class="field">
+                                            <input type="text" name="" placeholder="输入价格">
+                                        </div>
+                                    </td>
+                                    <td class="three wide"><i class="add circle icon text-blue hand-type large"></i><i class="minus circle icon hand-type large"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fields-label" style="margin-top:1em"><strong>团购票设置&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="example" tabindex="0" class="hidden" checked="">
+                            <label class="f12">添加团购票设置</label>
+                        </div>
+                    </div>
+                    <div class="create-border" style="padding:1em;">
+                        <div class="three fields">
+                            <div class="field">
+                                <label class="fwn">最小购票数</label>
+                                <input type="tel" placeholder="输入数量">
+                            </div>
+                            <div class="field">
+                                <label class="fwn">最大购票数</label>
+                                <input type="tel" placeholder="输入数量">
+                            </div>
+                            <div class="field">
+                                <label class="fwn">当购买门票数量大于或者等于</label>
+                                <input type="tel" placeholder="输入数量">
+                            </div>
+                        </div>
+                        <div class="ui horizontal divider">or</div>
+                        <div class="two fields">
+                            <div class="field">
+                                <label class="fwn">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="piao" checked="">
+                                        <label class="f12">每张优惠金额</label>
+                                    </div>
+                                </label>
+                                <input type="tel" placeholder="输入金额">
+                            </div>
+                            <div class="field">
+                                <label class="fwn">
+                                    <div class="ui radio checkbox">
+                                        <input type="radio" name="piao">
+                                        <label class="f12">免费赠送</label>
+                                    </div>
+                                </label>
+                                <input type="tel" placeholder="输入数量">
+                            </div>
+                        </div>
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="example" tabindex="0" class="hidden" checked="">
+                            <label class="f12">可以在满减的基础上使用优惠码</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions text-center">
+                <div class="ui button deny">
+                    取消
+                </div>
+                <div class="ui blue button ok">
+                    确定
+                </div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/rippled.js"></script>
@@ -229,10 +639,17 @@
     <script type="text/javascript">
     $('.progress').progress();
     $('.home-sorts').dimmer({
-        on: 'hover',
-        opacity: '0.3',
+        on: 'click',
+        // opacity: '0.3',
         transition: 'fade up'
     });
+    $('.dropdown').dropdown()
+    $('.ui.checkbox').checkbox()
+    $('.icon.help').popup()
+    $('.modal').modal()
+    $('.sponsor.modal').modal('attach events', '#add-sponsor')
+    // $('.weixin.modal').modal('attach events', '#wechat')
+    // $('.admission-ticket.modal').modal('attach events', '.menpiao')
     </script>
 </body>
 
