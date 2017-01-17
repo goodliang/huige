@@ -12,6 +12,11 @@
     padding: 35px 70px;
 }
 
+.create-box {
+    padding: 35px;
+    margin-bottom: 2.5em;
+}
+
 .create-border {
     border: 4px solid #f5f7fb;
 }
@@ -160,6 +165,13 @@
 
 .fluidTabsCon {
     background: #fff;
+    position: relative;
+}
+
+.fluidTabsCon #wechat {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -182,12 +194,21 @@
     width: 100%;
     height: 100%;
 }
-
+.home-sorts .image{
+    background:rgba(0, 0, 0, 1) !important;
+}
 .home-sorts .image img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: inherit;
+    opacity: 0.8;
+}
+
+.home-sorts .image .check {
+    position: absolute;
+    top: .1em;
+    right: .1em;
 }
 
 .home-sorts .dimmer .center {
