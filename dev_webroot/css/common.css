@@ -64,6 +64,14 @@
     font-size: 26px !important;
 }
 
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
 .text-center {
     text-align: center !important;
 }
@@ -430,7 +438,6 @@ body {
 /*.toggle-area {
     display: none !important; 
 }*/
-
 
 .footerBar {
     margin-top: 5em;

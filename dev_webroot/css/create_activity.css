@@ -76,7 +76,7 @@
 
 .item-input .ui.checkbox label {
     padding-left: 0;
-    padding-right: 1.85714em:
+    padding-right: 1.85714em;
 }
 
 .item-input .ui.checkbox label:before,
@@ -130,10 +130,10 @@
     font-size: 0.92857143em;
 }
 
-.field,
+/*.field,
 .fields {
     white-space: nowrap;
-}
+}*/
 
 .field>.move,
 .fields>.move {
@@ -178,6 +178,9 @@
     .create-area {
         padding: 15px;
     }
+    .create-box {
+        padding: 15px 10px;
+    }
     .sub-item-title em {
         position: inherit;
     }
@@ -194,15 +197,15 @@
     width: 100%;
     height: 100%;
 }
-.home-sorts .image{
+/*.home-sorts .image{
     background:rgba(0, 0, 0, 1) !important;
-}
+}*/
 .home-sorts .image img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: inherit;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 .home-sorts .image .check {
