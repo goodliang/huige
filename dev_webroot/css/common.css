@@ -275,7 +275,7 @@ body {
 }
 
 .headBar.fixed+.pusher {
-    padding-top: 56px;
+    padding-top: 55px;
 }
 
 .head-logo {
@@ -283,14 +283,14 @@ body {
     position: relative;
 }
 
-.headBar.ui.menu .item {
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
+.headBar.ui.menu {
+    border-width: 0px;
+    box-shadow: 0 0px 20px 0 rgba(137, 157, 197, 0.2);
 }
 
-.headBar.ui.menu .item.drawer {
-    padding-top: .9em;
-    padding-bottom: .9em;
+.headBar.ui.menu .item {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 .headBar.ui.menu .noLine.item:before {
@@ -299,7 +299,7 @@ body {
 
 .headBar.ui.menu .item.logo {
     padding: 0;
-    width: 240px;
+    width: 220px;
     text-align: center;
 }
 
@@ -310,6 +310,60 @@ body {
 .headBar.ui.menu .item.logo img {
     height: 29px;
     margin: 13px auto;
+}
+
+.topNav {
+    width: 300px !important;
+    z-index: 100!important;
+    box-shadow: none!important;
+}
+
+.main-nav {
+    width: 300px;
+    padding: 30px !important;
+    left:auto !important;
+    right:0 !important;
+    /*    box-shadow: 0 5px 20px rgba(137, 157, 197, 0.2);*/
+}
+.ui.dropdown .menu
+.main-nav .signOut {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.main-nav>.divider {
+    border-top: 0 !important;
+    height: 0;
+    margin: 1em 0 !important;
+}
+
+.main-nav>.item {
+    display: none !important;
+}
+
+.main-nav .ui.cards.default>.card {
+    color: #3f464b;
+}
+
+.main-nav .ui.cards.default>.card:hover {
+    box-shadow: none;
+    color: #6f7072;
+}
+
+.main-nav .ui.card>.content,
+.main-nav .ui.cards>.card>.content {
+    padding: .5em 0 0;
+    text-align: center;
+    border-top: 0;
+}
+
+.main-nav .ui.card.default,
+.main-nav .ui.cards.default>.card {
+    box-shadow: none;
+}
+
+.menu-more {
+    position: relative;
 }
 
 
