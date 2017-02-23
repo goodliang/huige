@@ -114,6 +114,14 @@
     color: #09f !important;
 }
 
+.text-teal {
+    color: #00cfb3 !important;
+}
+
+.text-orange {
+    color: #ff8831 !important;
+}
+
 .hand-type {
     cursor: pointer;
 }
@@ -321,12 +329,12 @@ body {
 .main-nav {
     width: 300px;
     padding: 30px !important;
-    left:auto !important;
-    right:0 !important;
+    left: auto !important;
+    right: 0 !important;
     /*    box-shadow: 0 5px 20px rgba(137, 157, 197, 0.2);*/
 }
-.ui.dropdown .menu
-.main-nav .signOut {
+
+.ui.dropdown .menu .main-nav .signOut {
     border-top-left-radius: 0;
     border-top-right-radius: 0
 }
